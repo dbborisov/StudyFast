@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @MappedSuperclass
-class BaseEntity {
+public abstract  class BaseEntity {
     @Id
     @GeneratedValue(generator = "uuid-string")
     @GenericGenerator(name = "uuid-string", strategy = "org.hibernate.id.UUIDGenerator")

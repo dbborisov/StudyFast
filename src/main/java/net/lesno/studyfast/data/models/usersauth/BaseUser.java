@@ -1,10 +1,10 @@
-package net.lesno.studyfast.data.models;
+package net.lesno.studyfast.data.models.usersauth;
 
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.usertype.UserType;
+import net.lesno.studyfast.data.models.BaseEntity;
 
 import javax.persistence.*;
 
@@ -13,13 +13,12 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @MappedSuperclass
-class BaseUser extends BaseEntity {
+abstract class BaseUser extends BaseEntity {
     @Column(name = "username",nullable = false, unique = true,updatable = false)
     private String username;
     @Column(name = "password",nullable = false)
     private String password;
-    @Column(name = "email",nullable = false)
-    private String email;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "role_type")
     private RoleType type;
