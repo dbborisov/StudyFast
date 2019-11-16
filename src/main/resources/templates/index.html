@@ -1,10 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Study Fast</title>
 </head>
+
 <body>
-<h1>Chushki</h1>
+<!-- Navbar Component -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand "  href="/home"><img src="static/img/logoTest.jpg" style="background-size:0%;" alt="adhoc logo"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-right flex-grow-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+        </ul>
+
+    </div>
+
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid" style="background:url(../static/img/library-wallpaper-1280x800.jpg) no-repeat; background-size:cover;">
+    <div class= "my-5 text-center  text-white bg-secondary " >
+        <h1 class = "display-4">Administration made easy</h1>
+        <p>Adhoc is an on-demand administrativ service for youre company growth</p>
+    </div>
+</div>
+<div class="text-center">
+        <span class="badge badge-dark badge-pill">
+        Learnin cand be fun
+        </span>
+</div>
+
+<!-- Container -->
+<div class="container ">
+    <!-- Quote Section -->
+    <div class="row">
+        <div class="col">
+            <h2 class="font-italic font-weight-light text-muted" >"За да можем децата ни да се учат и развиват по бързо и качествено в наши дни, ние родителите трябва да започнем да се учим с тях"</h2>
+            <p>-Д. Борисов, <span>Study Fast CEO </span></p>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Why Adhoc? Text -->
+    <div class="row">
+        <div class="col">
+            <h2 class="display-3 text-muted text-center "> Как предлагаме? </h2>
+        </div>
+    </div>
+
+    <!-- Image Reasons Section -->
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-xs-8">
+            <div class="card border-2"  style="width: 18rem;">
+                <img src="../static/img/kidRead.png" class="card-img-top" alt="Read">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <!-- First card goes here -->
+
+        </div>
+
+        <div class="col-md-4 col-xs-8">
+            <div class="card border-2"  style="width: 18rem;">
+                <img src="../static/img/Science.jpg" class="card-img-top" alt="Science">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <!-- Second card goes here -->
+
+        </div>
+
+        <div class="col-md-4 col-xs-8 ">
+            <div class="card border-0 "  style="width: 18rem;">
+                <img src="../static/img/math.jpg" class="card-img-top" alt="Math">
+                <div class="card-body">
+                    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <!-- Third card goes here -->
+
+        </div>
+    </div>
+
+
+
+</div>
+<!-- Footer -->
+<footer class="display-5 text-muted text-center">2019 Adhoc &copy;</footer>
+
+<!-- Bootstrap's JavaScript Files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
+
 </html>
